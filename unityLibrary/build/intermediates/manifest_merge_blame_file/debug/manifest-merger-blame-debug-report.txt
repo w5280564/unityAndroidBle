@@ -1,0 +1,148 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player" >
+5
+6    <uses-sdk android:minSdkVersion="24" />
+6-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml
+7
+8    <uses-feature android:glEsVersion="0x00030000" />
+8-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:3:3-52
+8-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:3:17-49
+9    <uses-feature
+9-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:4:3-91
+10        android:name="android.hardware.vulkan.version"
+10-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:4:17-63
+11        android:required="false" />
+11-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:4:64-88
+12    <uses-feature
+12-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:5:3-88
+13        android:name="android.hardware.touchscreen"
+13-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:5:17-60
+14        android:required="false" />
+14-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:5:61-85
+15    <uses-feature
+15-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:6:3-99
+16        android:name="android.hardware.touchscreen.multitouch"
+16-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:6:17-71
+17        android:required="false" />
+17-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:6:72-96
+18    <uses-feature
+18-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:7:3-108
+19        android:name="android.hardware.touchscreen.multitouch.distinct"
+19-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:7:17-80
+20        android:required="false" />
+20-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:7:81-105
+21
+22    <uses-permission android:name="android.permission.BLUETOOTH" />
+22-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:11:3-66
+22-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:11:20-63
+23    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- Android12 的蓝牙权限 如果您的应用与已配对的蓝牙设备通信或者获取当前手机蓝牙是否打开 -->
+23-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:12:3-72
+23-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:12:20-69
+24    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Android12 的蓝牙权限 如果您的应用查找蓝牙设备（如蓝牙低功耗 (BLE) 外围设备） -->
+24-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:13:3-74
+24-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:13:20-71
+25    <uses-permission
+25-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:14:3-17:29
+26        android:name="android.permission.BLUETOOTH_SCAN"
+26-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:15:7-55
+27        android:usesPermissionFlags="neverForLocation"
+27-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:16:7-53
+28        tools:targetApi="s" /> <!-- Android12 的蓝牙权限 如果您的应用使当前设备可被其他蓝牙设备检测到 -->
+28-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:17:7-26
+29    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" /> <!-- Android6-11 定位权限 -->
+29-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:18:3-76
+29-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:18:20-73
+30    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+30-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:19:3-77
+30-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:19:20-74
+31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+31-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:20:3-79
+31-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:20:20-76
+32
+33    <application android:extractNativeLibs="true" >
+33-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:22:5-39:17
+33-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:22:18-50
+34        <meta-data
+34-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:23:5-69
+35            android:name="unity.splash-mode"
+35-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:23:16-48
+36            android:value="0" />
+36-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:23:49-66
+37        <meta-data
+37-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:24:5-74
+38            android:name="unity.splash-enable"
+38-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:24:16-50
+39            android:value="True" />
+39-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:24:51-71
+40        <meta-data
+40-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:25:5-78
+41            android:name="unity.launch-fullscreen"
+41-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:25:16-54
+42            android:value="True" />
+42-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:25:55-75
+43        <meta-data
+43-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:26:5-84
+44            android:name="unity.allow-resizable-window"
+44-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:26:16-59
+45            android:value="False" />
+45-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:26:60-81
+46        <meta-data
+46-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:27:5-81
+47            android:name="notch.config"
+47-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:27:16-43
+48            android:value="portrait|landscape" />
+48-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:27:44-78
+49        <meta-data
+49-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:28:5-84
+50            android:name="unity.auto-report-fully-drawn"
+50-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:28:16-60
+51            android:value="true" />
+51-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:28:61-81
+52
+53        <activity
+53-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:5-36:16
+54            android:name="com.unity3d.player.UnityPlayerActivity"
+54-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:15-68
+55            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+55-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:180-361
+56            android:exported="true"
+56-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:433-456
+57            android:hardwareAccelerated="false"
+57-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:397-432
+58            android:launchMode="singleTask"
+58-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:148-179
+59            android:resizeableActivity="false"
+59-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:362-396
+60            android:screenOrientation="fullUser"
+60-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:111-147
+61            android:theme="@style/UnityThemeSelector" >
+61-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:29:69-110
+62            <intent-filter>
+62-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:30:7-33:23
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:31:9-69
+63-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:31:19-66
+64
+65                <action android:name="android.intent.action.MAIN" />
+65-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:32:9-61
+65-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:32:17-58
+66            </intent-filter>
+67
+68            <meta-data
+68-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:34:7-82
+69                android:name="unityplayer.UnityActivity"
+69-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:34:18-58
+70                android:value="true" />
+70-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:34:59-79
+71            <meta-data
+71-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:35:7-70
+72                android:name="notch_support"
+72-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:35:18-46
+73                android:value="true" />
+73-->D:\unity\project\androidunity2\unityLibrary\src\main\AndroidManifest.xml:35:47-67
+74        </activity>
+75    </application>
+76
+77</manifest>

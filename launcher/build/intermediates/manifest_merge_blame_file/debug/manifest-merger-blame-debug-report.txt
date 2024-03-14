@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.DefaultCompany.BluetoothPlugin"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-feature android:glEsVersion="0x00030000" />
+19-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-54
+19-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:19-51
+20    <uses-feature
+20-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-11:36
+21        android:name="android.hardware.vulkan.version"
+21-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-55
+22        android:required="false" />
+22-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-33
+23    <uses-feature
+23-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-14:36
+24        android:name="android.hardware.touchscreen"
+24-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-52
+25        android:required="false" />
+25-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-33
+26    <uses-feature
+26-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-17:36
+27        android:name="android.hardware.touchscreen.multitouch"
+27-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-63
+28        android:required="false" />
+28-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-33
+29    <uses-feature
+29-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:5-20:36
+30        android:name="android.hardware.touchscreen.multitouch.distinct"
+30-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-72
+31        android:required="false" />
+31-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-33
+32
+33    <uses-permission android:name="android.permission.BLUETOOTH" />
+33-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:5-68
+33-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:22-65
+34    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- Android12 的蓝牙权限 如果您的应用与已配对的蓝牙设备通信或者获取当前手机蓝牙是否打开 -->
+34-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:5-74
+34-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:22-71
+35    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Android12 的蓝牙权限 如果您的应用查找蓝牙设备（如蓝牙低功耗 (BLE) 外围设备） -->
+35-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:5-76
+35-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:22-73
+36    <uses-permission
+36-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:5-28:31
+37        android:name="android.permission.BLUETOOTH_SCAN"
+37-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-57
+38        android:usesPermissionFlags="neverForLocation" /> <!-- Android12 的蓝牙权限 如果您的应用使当前设备可被其他蓝牙设备检测到 -->
+38-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:9-55
+39    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" /> <!-- Android6-11 定位权限 -->
+39-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:5-78
+39-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:22-75
+40    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+40-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:5-79
+40-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:22-76
+41    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 蓝牙模块 设置为true表示只有支持蓝牙的手机才能安装 -->
+41-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:5-81
+41-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:22-78
+42    <uses-feature
+42-->[:bluetoothstatewrapper-debug:] C:\Users\Administrator\.gradle\caches\transforms-4\55b99b252796ed85259c689551ff1d48\transformed\jetified-bluetoothstatewrapper-debug\AndroidManifest.xml:16:5-18:35
+43        android:name="android.hardware.bluetooth_le"
+43-->[:bluetoothstatewrapper-debug:] C:\Users\Administrator\.gradle\caches\transforms-4\55b99b252796ed85259c689551ff1d48\transformed\jetified-bluetoothstatewrapper-debug\AndroidManifest.xml:17:9-53
+44        android:required="true" />
+44-->[:bluetoothstatewrapper-debug:] C:\Users\Administrator\.gradle\caches\transforms-4\55b99b252796ed85259c689551ff1d48\transformed\jetified-bluetoothstatewrapper-debug\AndroidManifest.xml:18:9-32
+45
+46    <permission
+46-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+47        android:name="com.DefaultCompany.BluetoothPlugin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+47-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+48        android:protectionLevel="signature" />
+48-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+49
+50    <uses-permission android:name="com.DefaultCompany.BluetoothPlugin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+50-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+50-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+51
+52    <application
+52-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:3:3-83
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.10.1] C:\Users\Administrator\.gradle\caches\transforms-4\c4dbeabed63993de734b7a54ee535354\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="true"
+55-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:18-50
+56        android:icon="@mipmap/app_icon"
+56-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:3:49-80
+57        android:label="@string/app_name"
+57-->D:\unity\project\androidunity2\launcher\src\main\AndroidManifest.xml:3:16-48
+58        android:testOnly="true" >
+59        <meta-data
+59-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-36:33
+60            android:name="unity.splash-mode"
+60-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-45
+61            android:value="0" />
+61-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-30
+62        <meta-data
+62-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-39:36
+63            android:name="unity.splash-enable"
+63-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-47
+64            android:value="True" />
+64-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-33
+65        <meta-data
+65-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-42:36
+66            android:name="unity.launch-fullscreen"
+66-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-51
+67            android:value="True" />
+67-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-33
+68        <meta-data
+68-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-45:37
+69            android:name="unity.allow-resizable-window"
+69-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-56
+70            android:value="False" />
+70-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-34
+71        <meta-data
+71-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:9-48:50
+72            android:name="notch.config"
+72-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-40
+73            android:value="portrait|landscape" />
+73-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-47
+74        <meta-data
+74-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:9-51:36
+75            android:name="unity.auto-report-fully-drawn"
+75-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:13-57
+76            android:value="true" />
+76-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-33
+77
+78        <activity
+78-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:9-74:20
+79            android:name="com.unity3d.player.UnityPlayerActivity"
+79-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:13-66
+80            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+80-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:55:13-194
+81            android:exported="true"
+81-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:56:13-36
+82            android:hardwareAccelerated="false"
+82-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:13-48
+83            android:launchMode="singleTask"
+83-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:58:13-44
+84            android:resizeableActivity="false"
+84-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:59:13-47
+85            android:screenOrientation="fullUser"
+85-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:60:13-49
+86            android:theme="@style/UnityThemeSelector" >
+86-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:61:13-54
+87            <intent-filter>
+87-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:62:13-66:29
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:63:17-77
+88-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:63:27-74
+89
+90                <action android:name="android.intent.action.MAIN" />
+90-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:17-69
+90-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:65:25-66
+91            </intent-filter>
+92
+93            <meta-data
+93-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:68:13-70:40
+94                android:name="unityplayer.UnityActivity"
+94-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:69:17-57
+95                android:value="true" />
+95-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:70:17-37
+96            <meta-data
+96-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:71:13-73:40
+97                android:name="notch_support"
+97-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:72:17-45
+98                android:value="true" />
+98-->[:unityLibrary] D:\unity\project\androidunity2\unityLibrary\build\intermediates\merged_manifest\debug\AndroidManifest.xml:73:17-37
+99        </activity>
+100
+101        <provider
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+102            android:name="androidx.startup.InitializationProvider"
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+103            android:authorities="com.DefaultCompany.BluetoothPlugin.androidx-startup"
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+104            android:exported="false" >
+104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+105            <meta-data
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+107                android:value="androidx.startup" />
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-4\5d406000575aa14975cdf23b1d76a166\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+108            <meta-data
+108-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-4\b93c976c90e8374e2f476162580febba\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+109                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+109-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-4\b93c976c90e8374e2f476162580febba\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+110                android:value="androidx.startup" />
+110-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-4\b93c976c90e8374e2f476162580febba\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+111        </provider>
+112    </application>
+113
+114</manifest>
